@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 
 <Base title={frontmatter.title}>
 	<main class="p-10 box-border min-h-screen grid h-full items-center content-center gap-4 grid-rows-[30vh auto]">
-		<img class="h-full w-full object-contain" src={frontmatter.image} />
+		<img class="h-full w-full max-h-80 object-contain" src={frontmatter.image} />
 		<div
 			class="prose-p:mb-4 prose-p:leading-loose
              prose-headings:font-bold prose-headings:mb-4
