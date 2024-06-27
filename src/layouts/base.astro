@@ -1,4 +1,5 @@
 ---
+import { registerSW } from "virtual:pwa-register";
 const { title } = Astro.props;
 ---
 
@@ -13,6 +14,13 @@ const { title } = Astro.props;
 		<link rel="mask-icon" href="/mask-icon.svg" color="#FFFFFF" />
 		<meta name="theme-color" content="#ffffff" />
 		<meta name="description" content="Kick yourself back into action" />
+		<script>
+			registerSW({
+				onNeedRefresh() {
+					updateSW(true);
+				},
+			});
+		</script>
 	</head>
 	<body>
 		<slot />

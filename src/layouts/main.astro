@@ -4,13 +4,15 @@ const { frontmatter } = Astro.props;
 ---
 
 <Base title={frontmatter.title}>
-	<main class="p-10 box-border min-h-screen grid h-full items-center content-center gap-4 grid-rows-[30vh auto]">
+	<main
+		class="p-10 box-border min-h-screen grid h-full items-center content-center gap-10 grid-rows-[30vh auto] max-w-xl mx-auto"
+	>
 		<img class="h-full w-full max-h-80 object-contain" src={frontmatter.image} />
 		<div
-			class="prose-p:mb-4 prose-p:leading-loose
-             prose-headings:font-bold prose-headings:mb-4
+			class="prose-p:mb-5 prose-p:leading-loose
+             prose-headings:font-bold prose-headings:mb-5 prose-headings:text-center
              prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg
-             prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-4
+             prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-5
              prose-li:mb-2
              prose-a:underline"
 		>
