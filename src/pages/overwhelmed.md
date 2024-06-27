@@ -10,4 +10,4 @@ image: /yunowork/overwhelmed.jpg
 - Identify parts you can do
 - Ask yourself whether this is actually what is needed 
 
-[It's something else...](/)
+[It's something else...](/yunowork)

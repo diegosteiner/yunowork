@@ -8,5 +8,5 @@ image: /yunowork/blocked.jpg
 
 - Pick something else from your backlog
 
-[It's something else...](/)
+[It's something else...](/yunowork)
 

@@ -10,4 +10,4 @@ image: /yunowork/tired.jpg
 - Go for a walk
 - [Do a short workout](https://www.hybridcalisthenics.com/routine)
 
-[It's something else...](/)
+[It's something else...](/yunowork)
