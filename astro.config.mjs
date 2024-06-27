@@ -1,16 +1,17 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import { VitePWA } from "vite-plugin-pwa"
+import AstroPWA from '@vite-pwa/astro'
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://diegosteiner.github.io',
   base: 'yunowork',
-	integrations: [tailwind()],
-	plugins: [
-		VitePWA({
+	integrations: [tailwind(),
+		AstroPWA({
       // add this to cache all the imports
       workbox: {
+
+        navigateFallback: '/yunowork',
           globPatterns: ["**/*"],
       },
       // add this to cache all the
@@ -19,8 +20,9 @@ export default defineConfig({
           "**/*",
       ],
       display: "standalone", 
-      scope: "/",
-      start_url: "/",
+      registerType: 'autoUpdate',
+      scope: "/yunowork",
+      start_url: "/yunowork",
       manifest: {
         name: 'YUNOwork',
         short_name: 'YUNOwork',

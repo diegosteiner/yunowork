@@ -2,7 +2,9 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "types": [
-      "vite-plugin-pwa/client"
+      "astro/client",
+      "vite-plugin-pwa/vanillajs",
+      "vite-plugin-pwa/info"
     ]
-  },
+  }
 }
