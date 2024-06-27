@@ -9,7 +9,18 @@ export default defineConfig({
 	integrations: [tailwind()],
 	plugins: [
 		VitePWA({
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      // add this to cache all the imports
+      workbox: {
+          globPatterns: ["**/*"],
+      },
+      // add this to cache all the
+      // static assets in the public folder
+      includeAssets: [
+          "**/*",
+      ],
+      display: "standalone", 
+      scope: "/",
+      start_url: "/",
       manifest: {
         name: 'YUNOwork',
         short_name: 'YUNOwork',
