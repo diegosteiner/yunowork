@@ -1,15 +1,20 @@
 ---
-const { content } = Astro.props;
+import Base from "./base.astro";
+const { frontmatter } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{content.title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+<Base title={frontmatter.title}>
+	<main class="p-10 box-border min-h-screen grid h-full items-center content-center gap-4 grid-rows-[30vh auto]">
+		<img class="h-full w-full object-contain" src={frontmatter.image} />
+		<div
+			class="prose-p:mb-4 prose-p:leading-loose
+             prose-headings:font-bold prose-headings:mb-4
+             prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg
+             prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-4
+             prose-li:mb-2
+             prose-a:underline"
+		>
+			<slot />
+		</div>
+	</main>
+</Base>
