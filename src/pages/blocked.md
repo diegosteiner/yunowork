@@ -1,7 +1,7 @@
 ---
 title: 'YUNOwork'
 layout: ../layouts/main.astro
-image: /blocked.jpg
+image: /yunowork/blocked.jpg
 ---
 
 # So you're blocked by something else?

@@ -1,7 +1,7 @@
 ---
 title: 'YUNOwork'
 layout: ../layouts/main.astro
-image: /tired.jpg
+image: /yunowork/tired.jpg
 ---
 
 # So you feel tired?

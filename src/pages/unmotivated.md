@@ -1,7 +1,7 @@
 ---
 title: 'YUNOwork'
 layout: ../layouts/main.astro
-image: /unmotivated.png
+image: /yunowork/unmotivated.png
 ---
 
 # So you just don't feel like doing that?

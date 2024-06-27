@@ -1,7 +1,7 @@
 ---
 title: 'YUNOwork'
 layout: ../layouts/main.astro
-image: /overwhelmed.jpg
+image: /yunowork/overwhelmed.jpg
 ---
 
 # So you're overwhelmed?
